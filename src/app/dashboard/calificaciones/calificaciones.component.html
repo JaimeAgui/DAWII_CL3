@@ -1,0 +1,24 @@
+<div class="card">
+    <div class="card-header">
+      Formualrio de suma
+    </div>
+    <div class="card-body">
+        <div class="mb-3">
+            <label for="txtNumero1" class="form-label">Ingrese número:</label>
+            <input type="text" [(ngModel)]="Promedio.numero1" class="form-control" id="txtNumero1">
+          </div>
+          
+          <div class="mb-3">
+            <label for="txtNumero2" class="form-label">Ingrese número:</label>
+            <input type="text" [(ngModel)]="Promedio.numero2" class="form-control" id="txtNumero2">
+          </div>
+          
+          <div class="mb-3">
+            <label for="txtNumero3" class="form-label">Ingrese número:</label>
+            <input type="text" [(ngModel)]="Promedio.numero3" class="form-control" id="txtNumero3">
+          </div>
+
+          <button type="button" (click)="calcularPromedio()" class="btn btn-primary">Calcular</button>
+          <div class="alert alert-primary" role="alert">{{resultado}}</div>
+    </div>
+  </div>
