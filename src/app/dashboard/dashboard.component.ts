@@ -14,7 +14,9 @@ export class DashboardComponent {
   irPaginaCalificaciones(): void{
     this.router.navigate(['calificaciones'], {relativeTo: this.route})
   }
-
+  irPaginaLibros(): void{
+    this.router.navigate(['librolista'], {relativeTo: this.route})
+  }
   irPaginaHome(): void{
     this.router.navigate(['dashboard'], {relativeTo: this.route})
   }

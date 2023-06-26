@@ -9,12 +9,16 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CalificacionesComponent } from './dashboard/calificaciones/calificaciones.component';
+import { LibrosComponent } from './dashboard/libros/libros.component';
+import { LibrosListaComponent } from './dashboard/libros/libros-lista/libros-lista.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     CalificacionesComponent,
+    LibrosComponent,
+    LibrosListaComponent,
   ],
   imports: [
     BrowserModule,    
@@ -26,6 +30,7 @@ import { CalificacionesComponent } from './dashboard/calificaciones/calificacion
       {path: 'dashboard', component: DashboardComponent,
         children:[
           {path: 'calificaciones', component: CalificacionesComponent},
+          {path: 'librolista', component: LibrosListaComponent},
   
         ]},      
       {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
