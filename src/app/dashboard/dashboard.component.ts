@@ -21,4 +21,8 @@ export class DashboardComponent {
     this.router.navigate(['dashboard'], {relativeTo: this.route})
   }
 
+  irPaginaEditorial(): void{
+    this.router.navigate(['editoriallista'], {relativeTo: this.route})
+  }
+
 }

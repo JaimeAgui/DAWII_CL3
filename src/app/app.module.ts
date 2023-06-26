@@ -11,6 +11,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { CalificacionesComponent } from './dashboard/calificaciones/calificaciones.component';
 import { LibrosComponent } from './dashboard/libros/libros.component';
 import { LibrosListaComponent } from './dashboard/libros/libros-lista/libros-lista.component';
+import { EditorialComponent } from './dashboard/editorial/editorial.component';
+import { EditorialListaComponent } from './dashboard/editorial/editorial-lista/editorial-lista.component';
+
 
 @NgModule({
   declarations: [
@@ -19,6 +22,8 @@ import { LibrosListaComponent } from './dashboard/libros/libros-lista/libros-lis
     CalificacionesComponent,
     LibrosComponent,
     LibrosListaComponent,
+    EditorialComponent,
+    EditorialListaComponent,
   ],
   imports: [
     BrowserModule,    
@@ -31,6 +36,7 @@ import { LibrosListaComponent } from './dashboard/libros/libros-lista/libros-lis
         children:[
           {path: 'calificaciones', component: CalificacionesComponent},
           {path: 'librolista', component: LibrosListaComponent},
+          {path: 'editoriallista', component: EditorialListaComponent}
   
         ]},      
       {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
